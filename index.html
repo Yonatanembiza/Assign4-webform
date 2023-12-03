@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #submit{
+            font-size: medium   ;
+            border-radius: 5px;
+            width: 80px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="weburl">Webiste URL</label><br>
+        <input autofocus="autofocus" nmae="weburl" type="text" id="weburl" placeholder="Website URL" required pattern="https?://.*"><br><br>
+        <label for="firstname">First Name</label><br>
+        <input type="text" id="firstname" placeholder="First name" required pattern="[A-Z][A-Za-z]{1,}"><br><br>
+        <label for="emailaddress">Email address</label><br>
+        <input type="text" id="emailaddress" placeholder="Emter email"><br><br>
+        <label for="password">Password</label><br>
+        <input type="text" id="password" maxlength="30" placeholder="password" required pattern=".{10,}"><br><br>
+        
+        <input type="submit" name="submit" value="Submit" id="submit" style="background-color:rgb(0, 94, 255); color: white;">
+    </form>
+</body>
+</html>
